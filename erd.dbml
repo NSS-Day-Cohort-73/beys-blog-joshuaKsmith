@@ -1,0 +1,22 @@
+Table Authors {
+    id int
+    name varchar
+    bio varchar
+}
+
+Table Articles {
+    id int 
+    data_created date
+    authorId int
+    headline varchar
+    body varchar
+    categoryId int
+}
+
+Table Categories {
+    id int
+    name varchar
+}
+
+ref { Authors.id < Articles.authorId }
+ref { Categories.id < Articles.categoryId }
