@@ -61,3 +61,20 @@ const database = {
     { id: 3, name: "Music" }
   ]
 };
+
+
+export const getAuthors = () => {
+    copyOfAuthors = database.authors
+    return copyOfAuthors
+}
+
+export const getArticles = () => {
+    copyOfArticles = database.articles
+    return copyOfArticles
+}
+
+export const getCategories = () => {
+    copyOfCategories = database.categories
+    return copyOfCategories
+}
+    
