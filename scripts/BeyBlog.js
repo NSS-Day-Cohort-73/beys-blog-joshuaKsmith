@@ -1,13 +1,15 @@
 export const BeyBlog = () => {
-  return `
+    let mainHTML = ""
+    mainHTML += `
         <article class="authors column">
             <h2>Authors</h2>
-        </article>
+            </article>
         <article class="articles column">
             <h2>Articles</h2>
         </article>
         <article class="categories column">
             <h2>Categories</h2>
         </article>
-    `;
-};
+    `
+    return mainHTML
+}
