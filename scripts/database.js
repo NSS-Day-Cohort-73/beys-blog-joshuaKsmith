@@ -59,17 +59,14 @@ const database = {
 
 
 export const getAuthors = () => {
-    copyOfAuthors = database.authors
-    return copyOfAuthors
+    return database.authors.map(author => ({...author}))
 }
 
 export const getArticles = () => {
-    copyOfArticles = database.articles
-    return copyOfArticles
+    return database.articles.map(article => ({...article}))
 }
 
 export const getCategories = () => {
-    copyOfCategories = database.categories
-    return copyOfCategories
+    return database.categories.map(category => ({...category}))
 }
     
