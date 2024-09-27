@@ -3,3 +3,17 @@
 body {
     font-family: "Quicksand", sans-serif;
 }
+
+.top_row {
+    display:flex;
+    flex-direction:row;
+}
+
+.articles_column, .authors_column {
+    flex-basis:50%;
+}
+
+.categories_column {
+    display:flex;
+    flex-direction:column;
+}
